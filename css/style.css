@@ -1074,6 +1074,11 @@ strong.expert-tag{
 #what-we-do .data-content{
 	background-color: #ffffff;
 	border-radius: 20px;
+	text-align: center;
+}
+
+#what-we-do .data-content > span{
+	margin-left:20px;
 }
 
 #what-we-do .data-border{
@@ -1081,5 +1086,9 @@ strong.expert-tag{
 }
 
 #what-we-do .bg-info{
-	background-color: #0CB88E;
+	background-color: #3399FF;
+}
+
+.container > div{
+	line-height: 30px;
 }

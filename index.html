@@ -18,7 +18,7 @@
 		<link href="css/responsive.css" rel="stylesheet">
 	</head>	
     
-    <body>
+    <body ng-app="app">
         <!--======== header =========-->
         <header id="home">
             <div class="row">
@@ -50,7 +50,7 @@
                                                 <strong>Women / Clothe</strong>
                                                 <small>Bright Desses in Leaf</small>
                                                 <span>2 X 400</span></li>
-                                            <li><p><i class="fa fa-trash-o"></i> Empty Carts <span class="pull-right">SubTotal : <span><span class="color">$1200</span></span></p></li>
+                                            <li><p><i class="fa fa-trash-o"></i> Empty Carts <span >SubTotal : <span><span class="color">$1200</span></span></p></li>
                                             <li class="text-center"><p><a class="btn btn-default" href="#">View Cart</a> <a class="btn btn-default" href="#">Checkout</a></p></li>
                                         </ul>
                                     </li>
@@ -77,6 +77,8 @@
 
        <!-- <div class="copyrights">Collect from <a href="http://www.cssmoban.com/" title="模板之家">模板之家</a></div>-->
         
+        <ng-view></ng-view>
+        
         <!--======== what we do =========-->
         <section id="what-we-do" class="what-we-do">
             <div class="container">
@@ -86,81 +88,81 @@
                 <div id="product">
                 	<div class="row">
                 		<div class="col-sm-2"><h4 class="text-primary text-right">生产数据：</h4></div>
-                		<div class="col-sm-2 col-sm-offset-8">2016年9月9日 星期五</div>
+                		<div class="col-sm-2 col-sm-offset-8 show-date"></div>
                 	</div>
                 	
                 	<div class="row">
                 		<div class="col-sm-4">
                 			<label class="col-sm-6 text-right">投产井数：</label>
-                			<span class="col-sm-6 data-content">6<span class="pull-right">口</span></span>
+                			<span class="col-sm-6 data-content">6<span>口</span></span>
                 		</div>
                 		<div class="col-sm-4">
                 			<label class="col-sm-6 text-right">开井数：</label>
-                			<span class="col-sm-6 data-content">4<span class="pull-right">口</span></span>
+                			<span class="col-sm-6 data-content">4<span>口</span></span>
                 		</div>
                 		<div class="col-sm-4">
                 			<label class="col-sm-6 text-right">关井数：</label>
-                			<span class="col-sm-6 data-content">2<span class="pull-right">口</span></span>
+                			<span class="col-sm-6 data-content">2<span>口</span></span>
                 		</div>
                 	</div>
                 	
                 	<div class="row">
                 		<div class="col-sm-4">
                 			<label class="col-sm-6 text-right">【井口】日产气：</label>
-                			<span class="col-sm-6 data-content">6<span class="pull-right">万方</span></span>
+                			<span class="col-sm-6 data-content">6<span>万方</span></span>
                 		</div>
                 		<div class="col-sm-4">
                 			<label class="col-sm-6 text-right">月产气：</label>
-                			<span class="col-sm-6 data-content">4<span class="pull-right">万方</span></span>
+                			<span class="col-sm-6 data-content">4<span >万方</span></span>
                 		</div>
                 		<div class="col-sm-4">
                 			<label class="col-sm-6 text-right">年产气：</label>
-                			<span class="col-sm-6 data-content">2<span class="pull-right">万方</span></span>
+                			<span class="col-sm-6 data-content">2<span >万方</span></span>
                 		</div>
                 	</div>
                 	
                 	<div class="row">
                 		<div class="col-sm-4">
                 			<label class="col-sm-6 text-right">【工业】日产气：</label>
-                			<span class="col-sm-6 data-content">6<span class="pull-right">万方</span></span>
+                			<span class="col-sm-6 data-content">6<span >万方</span></span>
                 		</div>
                 		<div class="col-sm-4">
                 			<label class="col-sm-6 text-right">月产气：</label>
-                			<span class="col-sm-6 data-content">4<span class="pull-right">万方</span></span>
+                			<span class="col-sm-6 data-content">4<span >万方</span></span>
                 		</div>
                 		<div class="col-sm-4">
                 			<label class="col-sm-6 text-right">年产气：</label>
-                			<span class="col-sm-6 data-content">2<span class="pull-right">万方</span></span>
+                			<span class="col-sm-6 data-content">2<span >万方</span></span>
                 		</div>
                 	</div>
                 	
                 	<div class="row">
                 		<div class="col-sm-4">
                 			<label class="col-sm-6 text-right">新井日产：</label>
-                			<span class="col-sm-6 data-content">6<span class="pull-right">万方</span></span>
+                			<span class="col-sm-6 data-content">6<span >万方</span></span>
                 		</div>
                 		<div class="col-sm-4">
                 			<label class="col-sm-6 text-right">新井月产：</label>
-                			<span class="col-sm-6 data-content">4<span class="pull-right">万方</span></span>
+                			<span class="col-sm-6 data-content">4<span >万方</span></span>
                 		</div>
                 		<div class="col-sm-4">
                 			<label class="col-sm-6 text-right">新井年产：</label>
-                			<span class="col-sm-6 data-content">2<span class="pull-right">万方</span></span>
+                			<span class="col-sm-6 data-content">2<span >万方</span></span>
                 		</div>
                 	</div>
                 	
                 	<div class="row">
                 		<div class="col-sm-4">
                 			<label class="col-sm-6 text-right">日产水：</label>
-                			<span class="col-sm-6 data-content">6<span class="pull-right">方</span></span>
+                			<span class="col-sm-6 data-content">6<span >方</span></span>
                 		</div>
                 		<div class="col-sm-4">
                 			<label class="col-sm-6 text-right">月产水：</label>
-                			<span class="col-sm-6 data-content">4<span class="pull-right">方</span></span>
+                			<span class="col-sm-6 data-content">4<span >方</span></span>
                 		</div>
                 		<div class="col-sm-4">
                 			<label class="col-sm-6 text-right">年产水：</label>
-                			<span class="col-sm-6 data-content">2<span class="pull-right">方</span></span>
+                			<span class="col-sm-6 data-content">2<span >方</span></span>
                 		</div>
                 	</div>
                 </div>
@@ -172,30 +174,30 @@
                 	<div class="row">
                 		<div class="col-sm-4">
                 			<label class="col-sm-6 text-right">日产量：</label>
-                			<span class="col-sm-6 data-content">6<span class="pull-right">万方</span></span>
+                			<span class="col-sm-6 data-content">6<span >万方</span></span>
                 		</div>
                 		<div class="col-sm-4">
                 			<label class="col-sm-6 text-right">月销量：</label>
-                			<span class="col-sm-6 data-content">4<span class="pull-right">万方</span></span>
+                			<span class="col-sm-6 data-content">4<span >万方</span></span>
                 		</div>
                 		<div class="col-sm-4">
                 			<label class="col-sm-6 text-right">年销量：</label>
-                			<span class="col-sm-6 data-content">2<span class="pull-right">万方</span></span>
+                			<span class="col-sm-6 data-content">2<span >万方</span></span>
                 		</div>
                 	</div>
                 	
                 	<div class="row">
                 		<div class="col-sm-4">
                 			<label class="col-sm-6 text-right">累计销量：</label>
-                			<span class="col-sm-6 data-content">6<span class="pull-right">万方</span></span>
+                			<span class="col-sm-6 data-content">6<span >万方</span></span>
                 		</div>
                 		<div class="col-sm-4">
                 			<label class="col-sm-6 text-right">销售指标：</label>
-                			<span class="col-sm-6 data-content">4<span class="pull-right">万方</span></span>
+                			<span class="col-sm-6 data-content">4<span >万方</span></span>
                 		</div>
                 		<div class="col-sm-4">
                 			<label class="col-sm-6 text-right">外输气量：</label>
-                			<span class="col-sm-6 data-content">2<span class="pull-right">万方</span></span>
+                			<span class="col-sm-6 data-content">2<span >万方</span></span>
                 		</div>
                 	</div>
                 </div>
@@ -207,15 +209,15 @@
                 	<div class="row">
                 		<div class="col-sm-4">
                 			<label class="col-sm-6 text-right">1#阀室压力：</label>
-                			<span class="col-sm-6 data-content">6<span class="pull-right">MPa</span></span>
+                			<span class="col-sm-6 data-content">6<span >MPa</span></span>
                 		</div>
                 		<div class="col-sm-4">
                 			<label class="col-sm-6 text-right">2#阀室压力：</label>
-                			<span class="col-sm-6 data-content">4<span class="pull-right">MPa</span></span>
+                			<span class="col-sm-6 data-content">4<span >MPa</span></span>
                 		</div>
                 		<div class="col-sm-4">
                 			<label class="col-sm-6 text-right">3#阀室压力：</label>
-                			<span class="col-sm-6 data-content">2<span class="pull-right">MPa</span></span>
+                			<span class="col-sm-6 data-content">2<span >MPa</span></span>
                 		</div>
                 	</div>
                 	
@@ -227,17 +229,17 @@
                 			
                 			<div class="row">
                 				<label class="col-sm-3 col-sm-offset-1 text-right">外输气量：</label>
-                				<span class="col-sm-6 data-content">2<span class="pull-right">万方</span></span>
+                				<span class="col-sm-6 data-content">2<span >万方</span></span>
                 			</div>
                 			
                 			<div class="row">
                 				<label class="col-sm-3 col-sm-offset-1 text-right">进站压力：</label>
-                				<span class="col-sm-6 data-content">2<span class="pull-right">MPa</span></span>
+                				<span class="col-sm-6 data-content">2<span >MPa</span></span>
                 			</div>
                 			
                 			<div class="row">
                 				<label class="col-sm-3 col-sm-offset-1 text-right">出站压力：</label>
-                				<span class="col-sm-6 data-content">2<span class="pull-right">MPa</span></span>
+                				<span class="col-sm-6 data-content">2<span >MPa</span></span>
                 			</div>
                 		</div>
                 		<div class="col-sm-5 col-sm-offset-1 bg-info data-border">
@@ -247,17 +249,17 @@
                 			
                 			<div class="row">
                 				<label class="col-sm-3 col-sm-offset-1 text-right">外输气量：</label>
-                				<span class="col-sm-6 data-content">2<span class="pull-right">万方</span></span>
+                				<span class="col-sm-6 data-content">2<span >万方</span></span>
                 			</div>
                 			
                 			<div class="row">
                 				<label class="col-sm-3 col-sm-offset-1 text-right">进站压力：</label>
-                				<span class="col-sm-6 data-content">2<span class="pull-right">MPa</span></span>
+                				<span class="col-sm-6 data-content">2<span >MPa</span></span>
                 			</div>
                 			
                 			<div class="row">
                 				<label class="col-sm-3 col-sm-offset-1 text-right">出站压力：</label>
-                				<span class="col-sm-6 data-content">2<span class="pull-right">MPa</span></span>
+                				<span class="col-sm-6 data-content">2<span >MPa</span></span>
                 			</div>
                 		</div>
                 		</div>
@@ -270,8 +272,10 @@
         <!--======== All Javascript =========-->
         <script src="js/jquery-2.1.1.js"></script>
 		<script src="bootstrap/js/bootstrap.min.js"></script>
-        
         <script src="js/owl.carousel.min.js"></script>
         <script src="js/custom.js"></script>
+        <script src="js/date.js"></script>
+        <script src="js/angular.min.js" ></script>
+        <script src="js/app.js"></script>
     </body>
 </html>
