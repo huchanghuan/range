@@ -7,12 +7,12 @@ $(function(){
 
 function getCurrentTimes() {
 	var m;
-	var weekDays = ["星期一", "星期二", "星期三", "星期四", "星期五", "星期六", "星期天"];
+	var weekDays = ["星期天", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"];
 	
 	var date = new Date();
 	var year = date.getFullYear() + "年";
 	var month = ((m = date.getMonth() + 1) < 10 ? "0" + m :m) + "月";
 	var dayOfMonth = date.getDate() + "日 ";
 	var weekDay = date.getDay();
-	return year + month + dayOfMonth + weekDays[weekDay-1];
+	return year + month + dayOfMonth + weekDays[weekDay];
 }
